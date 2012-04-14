@@ -9,9 +9,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <ul>
     <% foreach(var p in System.Diagnostics.Process.GetProcesses()) { %>
+    <li>
     <%: p.ProcessName %>
+    </li>
     <% } %>
+    </ul>
     </div>
     </form>
 </body>
